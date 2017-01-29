@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Cloud Computing</title>
+  </head>
+
+  <body>
+	<form enctype="multipart/form-data" action="/upload" method="post">
+		<input id="file_upload" name="file_upload" type="file" value="Choose a File to Upload" />
+    		<input type="submit" value="Upload" />
+	</form>
+
+	<br><br>	
+	<form action="/list">
+    		<input id="file_list" name="file_list" type="submit" value="List All Files on Cloud" />
+	</form>
+	
+
+	<br><br>	
+	<form enctype="multipart/form-data" action="/delete" method="post">
+		<input type=text name=filename id=filename/>
+    		<input type="submit" value="Delete File" />
+	</form>
+
+	<br><br>
+	<form enctype="multipart/form-data" action="/download" method="post">
+		<input type=text name=filedownload id=filedownload/>
+    		<input type="submit" value="Download File" />
+	</form>
+	
+	
+     
+  </body>
+
+</html>
