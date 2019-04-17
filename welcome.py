@@ -27,7 +27,6 @@ from simplecrypt import encrypt, decrypt
 #key = Fernet.generate_key() 
 #cipher_suite = Fernet(key)
 
-
 app = Flask(__name__)
 
 auth_url = "https://identity.open.softlayer.com/v3"
